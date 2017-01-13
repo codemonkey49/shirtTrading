@@ -1,0 +1,33 @@
+{%extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+<html>
+    {%block body%}
+        {{post.user}}
+        {{post.team}}
+        {{post.wanted}}
+    
+    
+    
+    <div id="messenger" class="messenger">
+    {%for i in mergedMessages%}
+    {%if user == i.sentBy %}
+    <div id="sent" class="sent">
+            {{i.content}}<br>
+    </div>
+    {%else%}
+    <div id="recieved" class="recieved">
+            {{i.content}}<br>
+    </div>
+    {%endif%}
+    {%endfor%}
+    
+    <form action="" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="send" />
+</form>
+
+    </div>
+    {%endblock%}
+</html>

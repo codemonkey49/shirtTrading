@@ -1,0 +1,19 @@
+{%extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+<html>
+    {%block body%}
+        <img src={{url}} alt="http://www.telegraph.co.uk/content/dam/news/2016/08/23/106598324PandawaveNEWS-large_trans++eo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg" style="width:304px;height:228px;">
+        signed in as {{user}}
+        
+        <p id=teamNum>from team number: {{teamNumber}}</p>
+       
+        
+    <form action="/profile" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="teamNum" />
+</form>
+    {%endblock%}
+</html>

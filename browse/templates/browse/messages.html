@@ -1,0 +1,9 @@
+{%extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+{%block body%}
+{%for i in activeMessages%}
+<li><a href= {%url "browse:detail" userName=i%}>{{i}}</a></li>
+{%endfor%}
+{%endblock%}
