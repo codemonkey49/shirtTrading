@@ -1,10 +1,10 @@
 from django.conf.urls import url
-import views
+from .views import *
 
 urlpatterns = [
-    url(r'^$', views.index, name="index"),
-    url(r"profile",views.profile,name="profile"),
-    url(r"browse",views.browse,name="browse"),
-    url(r"detail/(?P<userName>.*)/",views.detail,name="detail"),
-    url(r"messages/",views.messages,name="messages"),
+    url(r'^$', index, name="index"),
+    url(r"profile",profile,name="profile"),
+    url(r"browse",browse,name="browse"),
+    url(r"detail/(?P<userName>.*)/",detail,name="detail"),
+    url(r"messages/",messages,name="messages"),
     ]

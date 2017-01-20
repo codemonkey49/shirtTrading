@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 
 from data.models import UserProfile,message
-from forms import teamNumForm,messageForm
+from .forms import teamNumForm,messageForm
 # Create your views here.
 @login_required
 def index(request):
@@ -128,6 +128,6 @@ def messages(request):
             activeMessages.append(i.sentTo)
     for i in messagesFrom:
         if i.sentBy not in activeMessages:
-            activeMessages+=i.sentBy
+            activeMessages.append(i.sentBy)
     context["activeMessages"]=activeMessages
     return render(request,template,context)
