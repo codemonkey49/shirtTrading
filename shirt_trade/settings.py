@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -129,3 +130,7 @@ AUTH_PROFILE_MODULE = "data.UserProfile"
 LOGIN_URL='/login/'
 LOGIN_REDIRECT_URL='/login/'
 
+SECRET_KEY='lmrffsgfhrilklg-za7#57vi!zr)ps8)2anyona25###dl)s-#s=7=vn_'
+
+import django
+django.setup()
