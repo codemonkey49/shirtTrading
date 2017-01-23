@@ -57,7 +57,7 @@ def profile(request):
 @login_required
 
 def browse(request):
-    template=""
+    template = "browse/browse.html"
     context={}
     return render(request,template,context)
 
