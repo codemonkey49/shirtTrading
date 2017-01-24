@@ -7,12 +7,13 @@ section{
     height: 100%;
     }
     .login{
-        height: 30px;
-        font-size:20px;
+        height: 35px;
+        font-size: 25px;
         text-align:right;
+        color: white;
     }
 
-.Nav {
+div.Nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -20,22 +21,30 @@ section{
     background-color: #3146b5;
     position: fixed;
     width: 100%;
+
 }
 
-.Nav.link {
+.Nav .link {
     float: left;
+    display: inline;
+    color: #fdf3ff;
+    height: 40px;
+
+
 }
 
-.Nav.link a {
+.Nav .link a {
     color: #ffffff;
-    display: block;
-    text-align: center;
+    display: inline;
+    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 25px;
+
 
 }
 
-.Nav.link.a:hover:not(.active) {
+.Nav .link:hover:not(.active) {
     background-color: #111;
 }
 

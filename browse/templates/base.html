@@ -14,7 +14,7 @@
 
         <div id="login" class="login">{% block login %}
      {%if user.is_authenticated%}
-          logged in as:<b>{{user}}</b>   <a href= {%url "logout"%}?next={% url 'browse:index' %} >(logout)</a>
+         logged in as: <b>{{ user }}</b>   <a href={% url "logout" %}?next={% url 'browse:index' %} >(logout)</a>
      {%else%}
      <a href= {%url "login"%}?next={% url 'browse:profile' %} >login</a>
      {%endif%}
