@@ -7,21 +7,21 @@ from django.contrib.auth.decorators import login_required
 from data.models import UserProfile,message
 from .forms import teamNumForm,messageForm
 # Create your views here.
-@login_required
+#@login_required
 def index(request):
     template="browse/index.html"
     context={}
     context["user"]=request.user
-    
-    priorityTrades=[]
-    wanted=UserProfile.objects.filter(user=request.user)[0].wanted
-    for i in wanted.split(","):
-        i=int(i)
-        teamMems=UserProfile.objects.filter(team=i,post=True).exclude(shirtCount=0)
-        if len(teamMems)>0:
-            priorityTrades.append(teamMems[0])
-                
-    context["trades"]=priorityTrades
+    if  not request.user.is_anonymous():
+        priorityTrades=[]
+        wanted=UserProfile.objects.filter(user=request.user)[0].wanted
+        for i in wanted.split(","):
+            i=int(i)
+            teamMems=UserProfile.objects.filter(team=i,post=True).exclude(shirtCount=0)
+            if len(teamMems)>0:
+                priorityTrades.append(teamMems[0])
+                    
+        context["trades"]=priorityTrades
     return render(request,template,context)
 
 @login_required
