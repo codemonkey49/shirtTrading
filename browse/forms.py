@@ -11,3 +11,7 @@ class messageForm(forms.ModelForm):
     class Meta:
         model=message
         fields=["content"]
+
+
+class browseForm(forms.Form):
+    search = forms.CharField(label="search", max_length=100)

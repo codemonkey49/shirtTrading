@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 
 from data.models import UserProfile,message
-from .forms import teamNumForm,messageForm
+from .forms import teamNumForm, messageForm, browseForm
 # Create your views here.
 #@login_required
 def index(request):
@@ -59,6 +59,14 @@ def profile(request):
 def browse(request):
     template = "browse/browse.html"
     context={}
+
+    if request.method == "POST":
+        form = browseForm(request.POST)
+        if form.is_valid():
+            print(form.cleaned_data["search"])
+    else:
+        form = browseForm()
+    context["form"] = form
     return render(request,template,context)
 
 @login_required
