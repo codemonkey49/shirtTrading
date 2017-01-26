@@ -12,9 +12,8 @@
         <h2>{{ i.user }}, from team: {{ i.team }}</h2>
 
         <a id="img" href={% url "browse:detail" userName=i.user %}>
-            <img src={{ i.shirtImg }}/>
+            <img src={{i.shirtImg}}>
         </a>
-
 
         {%endfor%}
         {%endif%}

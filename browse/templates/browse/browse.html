@@ -1,5 +1,9 @@
 {% extends "base.html" %}
+{% load static%}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'browse/browse.css' %}">
 
+{% endblock %}
 {% block body %}
     <br>
     <br>
@@ -9,4 +13,10 @@
         {{ form }}
         <input type="submit" value="Submit"/>
     </form>
+    
+    {% for i in items%}
+        <a id="img" href={% url "browse:detail" userName=i.user %}>
+            <img src={{i.shirtImg}}>
+        </a>
+    {% endfor %}
 {% endblock %}
