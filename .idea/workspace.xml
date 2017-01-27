@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8f4d5e8-083f-4379-bfd1-2cb7a7979a61" name="Default" comment="browse changes&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/browse/static/browse/detail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/browse/static/browse/profile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+    <list default="true" id="c8f4d5e8-083f-4379-bfd1-2cb7a7979a61" name="Default" comment="profile visual changes&#10;added example photos&#10;&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browse/forms.py" afterPath="$PROJECT_DIR$/browse/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browse/static/browse/base.css" afterPath="$PROJECT_DIR$/browse/static/browse/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browse/templates/browse/browse.html" afterPath="$PROJECT_DIR$/browse/templates/browse/browse.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browse/templates/browse/detail.html" afterPath="$PROJECT_DIR$/browse/templates/browse/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browse/templates/browse/index.html" afterPath="$PROJECT_DIR$/browse/templates/browse/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browse/templates/browse/profile.html" afterPath="$PROJECT_DIR$/browse/templates/browse/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browse/views.py" afterPath="$PROJECT_DIR$/browse/views.py" />
     </list>
     <list id="c9451703-d383-42d3-8741-e12e9871c10e" name="Revert: " comment="" />
     <ignored path="C:\Users\edson\Documents\GitHub\shirtTrading\.idea\shelf/" />
@@ -41,8 +31,8 @@
                 <element signature="e#0#44#0" expanded="true" />
                 <element signature="e#361#909#0" expanded="false" />
                 <element signature="e#953#2062#0" expanded="false" />
-                <element signature="e#2105#2625#0" expanded="false" />
-                <element signature="e#4775#5283#0" expanded="false" />
+                <element signature="e#2105#2634#0" expanded="false" />
+                <element signature="e#4784#5292#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -52,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/browse/templates/browse/profile.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+              <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -61,7 +51,7 @@
       <file leaf-file-name="browse.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/browse/templates/browse/browse.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
+            <state relative-caret-position="260">
               <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding />
             </state>
@@ -71,9 +61,12 @@
       <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/browse/templates/browse/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="52">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <marker date="1485507309225" expanded="true" signature="416:879" ph="{%block body... %}" />
+                <marker date="1485507309225" expanded="true" signature="464:718" ph="{%for i in mergedMessages... %}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/browse/static/browse/detail.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -131,13 +124,13 @@
         <option value="$PROJECT_DIR$/browse/templates/browse/messages.html" />
         <option value="$PROJECT_DIR$/browse/templates/base.html" />
         <option value="$PROJECT_DIR$/browse/forms.py" />
-        <option value="$PROJECT_DIR$/browse/templates/browse/browse.html" />
         <option value="$PROJECT_DIR$/browse/views.py" />
         <option value="$PROJECT_DIR$/browse/static/browse/profile.css" />
         <option value="$PROJECT_DIR$/browse/templates/browse/profile.html" />
         <option value="$PROJECT_DIR$/browse/static/browse/base.css" />
         <option value="$PROJECT_DIR$/browse/templates/browse/detail.html" />
         <option value="$PROJECT_DIR$/browse/static/browse/detail.css" />
+        <option value="$PROJECT_DIR$/browse/templates/browse/browse.html" />
       </list>
     </option>
   </component>
@@ -699,7 +692,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485340977597</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="profile visual changes&#10;added example photos&#10;&#10;">
+      <created>1485507237723</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1485507237723</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -738,7 +738,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="fixed static files" />
     <MESSAGE value="added Search field to browse" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Search field to browse" />
+    <MESSAGE value="profile visual changes&#10;added example photos&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="profile visual changes&#10;added example photos&#10;&#10;" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -762,8 +763,8 @@
             <element signature="e#0#44#0" expanded="true" />
             <element signature="e#361#909#0" expanded="false" />
             <element signature="e#953#2062#0" expanded="false" />
-            <element signature="e#2105#2625#0" expanded="false" />
-            <element signature="e#4775#5283#0" expanded="false" />
+            <element signature="e#2105#2634#0" expanded="false" />
+            <element signature="e#4784#5292#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -776,8 +777,8 @@
             <element signature="e#0#44#0" expanded="true" />
             <element signature="e#361#909#0" expanded="false" />
             <element signature="e#953#2062#0" expanded="false" />
-            <element signature="e#2105#2625#0" expanded="false" />
-            <element signature="e#4775#5283#0" expanded="false" />
+            <element signature="e#2105#2634#0" expanded="false" />
+            <element signature="e#4784#5292#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -846,8 +847,8 @@
             <element signature="e#0#44#0" expanded="true" />
             <element signature="e#361#909#0" expanded="false" />
             <element signature="e#953#2062#0" expanded="false" />
-            <element signature="e#2105#2625#0" expanded="false" />
-            <element signature="e#4775#5283#0" expanded="false" />
+            <element signature="e#2105#2634#0" expanded="false" />
+            <element signature="e#4784#5292#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -892,8 +893,8 @@
             <element signature="e#0#44#0" expanded="true" />
             <element signature="e#361#909#0" expanded="false" />
             <element signature="e#953#2062#0" expanded="false" />
-            <element signature="e#2105#2625#0" expanded="false" />
-            <element signature="e#4775#5283#0" expanded="false" />
+            <element signature="e#2105#2634#0" expanded="false" />
+            <element signature="e#4784#5292#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -914,8 +915,8 @@
             <element signature="e#0#44#0" expanded="true" />
             <element signature="e#361#909#0" expanded="false" />
             <element signature="e#953#2062#0" expanded="false" />
-            <element signature="e#2105#2625#0" expanded="false" />
-            <element signature="e#4775#5283#0" expanded="false" />
+            <element signature="e#2105#2634#0" expanded="false" />
+            <element signature="e#4784#5292#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -945,8 +946,8 @@
             <element signature="e#0#44#0" expanded="true" />
             <element signature="e#361#909#0" expanded="false" />
             <element signature="e#953#2062#0" expanded="false" />
-            <element signature="e#2105#2625#0" expanded="false" />
-            <element signature="e#4775#5283#0" expanded="false" />
+            <element signature="e#2105#2634#0" expanded="false" />
+            <element signature="e#4784#5292#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1113,8 +1114,8 @@
             <element signature="e#0#44#0" expanded="true" />
             <element signature="e#361#909#0" expanded="false" />
             <element signature="e#953#2062#0" expanded="false" />
-            <element signature="e#2105#2625#0" expanded="false" />
-            <element signature="e#4775#5283#0" expanded="false" />
+            <element signature="e#2105#2634#0" expanded="false" />
+            <element signature="e#4784#5292#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1122,7 +1123,7 @@
     <entry file="file://$PROJECT_DIR$/browse/templates/browse/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1137,9 +1138,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/browse/templates/browse/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="52">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1485507309225" expanded="true" signature="416:879" ph="{%block body... %}" />
+            <marker date="1485507309225" expanded="true" signature="464:718" ph="{%for i in mergedMessages... %}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1162,7 +1166,7 @@
     <entry file="file://$PROJECT_DIR$/browse/static/browse/detail.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1177,7 +1181,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/browse/templates/browse/browse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
+        <state relative-caret-position="260">
           <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding />
         </state>
