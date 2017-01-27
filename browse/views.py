@@ -59,14 +59,20 @@ def profile(request):
 def browse(request):
     template = "browse/browse.html"
     context={}
-
+    searchTerm = ""
     if request.method == "POST":
         form = browseForm(request.POST)
         if form.is_valid():
-            print(form.cleaned_data["search"])
+            searchTerm = form.cleaned_data["search"]
+            sortBy = form.cleaned_data["sortBy"]
     else:
         form = browseForm()
     context["form"] = form
+
+    items = UserProfile.objects.filter(post=True)
+    if searchTerm != "":
+        items = items.filter(team=searchTerm)
+    context["items"] = items
     return render(request,template,context)
 
 @login_required

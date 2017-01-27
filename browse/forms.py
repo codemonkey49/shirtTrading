@@ -14,4 +14,11 @@ class messageForm(forms.ModelForm):
 
 
 class browseForm(forms.Form):
-    search = forms.CharField(label="search", max_length=100)
+    # search = forms.CharField(label="search", max_length=100)
+    search = forms.IntegerField()
+
+    SortOptions = (
+        (1, ("number")),
+        (2, ("date")),
+    )
+    sortBy = forms.ChoiceField(choices=SortOptions)
