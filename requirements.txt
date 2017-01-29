@@ -1,3 +1,4 @@
+BzrTools==2.6.0
 Django==1.9
 Pillow==2.3.0
 PyYAML==3.12
@@ -7,6 +8,7 @@ awsebcli==3.9.0
 backports.ssl-match-hostname==3.5.0.1
 blessed==1.9.5
 botocore==1.5.4
+bzr==2.7.0.dev1
 cement==2.8.2
 chardet==2.0.1
 colorama==0.3.7
