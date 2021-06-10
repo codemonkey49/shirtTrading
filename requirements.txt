@@ -1,4 +1,4 @@
-Django==1.9
+Django==2.2.24
 Pillow==2.3.0
 PyYAML==3.12
 SecretStorage==2.0.0
